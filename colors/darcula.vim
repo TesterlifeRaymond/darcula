@@ -225,6 +225,7 @@ call s:Hi('PreProc', s:p.metaData)
 hi! link Tag Keyword
 call s:Hi('Debug', s:p.debug, s:p.null, 'italic')
 call s:Hi('Function', s:p.function, s:p.null, 'italic')
+call s:Hi('Method', s:p.method, s:p.null, 'italic')
 
 " helper groups
 call s:Hi('docComment', s:p.docComment, s:p.null, 'italic')
@@ -287,8 +288,6 @@ if has('nvim')
   let g:terminal_color_13 = s:p.ANSIBrightMagenta[0]
   let g:terminal_color_14 = s:p.ANSIBrightCyan[0]
   let g:terminal_color_15 = s:p.ANSIWhite[0]
-
-  hi! link GoMethod Function
 
   " nvim-treesitter
   hi! link TSAnnotation PreProc
