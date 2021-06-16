@@ -288,6 +288,8 @@ if has('nvim')
   let g:terminal_color_14 = s:p.ANSIBrightCyan[0]
   let g:terminal_color_15 = s:p.ANSIWhite[0]
 
+  hi! link GoMethod Function
+
   " nvim-treesitter
   hi! link TSAnnotation PreProc
   hi! link TSAttribute PreProc
